@@ -20,84 +20,87 @@
     --section-bg: #f0ede6;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--text); line-height: 1.6; }
+  html { font-size: 18px; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--text); line-height: 1.7; }
 
   .header { background: var(--navy); color: white; padding: 3rem 2rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
   .header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #1a2744 0%, #2a3d6b 60%, #1e3a5f 100%); }
   .header-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
-  .header h1 { font-family: 'Source Serif 4', serif; font-size: 2rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; margin-bottom: 1rem; color: white; }
+  .header h1 { font-family: 'Source Serif 4', serif; font-size: 2.1rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; margin-bottom: 1rem; color: white; }
   .header h1 span { color: var(--gold-light); }
-  .authors { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin-bottom: 0.4rem; }
-  .institution { font-size: 0.85rem; color: rgba(255,255,255,0.55); font-style: italic; }
+  .authors { font-size: 1rem; color: rgba(255,255,255,0.8); margin-bottom: 0.4rem; }
+  .institution { font-size: 0.9rem; color: rgba(255,255,255,0.55); font-style: italic; }
   .gold-bar { width: 60px; height: 3px; background: var(--gold); margin: 1.2rem auto 0; border-radius: 2px; }
 
   .finding-banner { background: var(--navy); border-top: 1px solid rgba(201,168,76,0.3); padding: 2rem; text-align: center; }
-  .finding-banner p { font-family: 'Source Serif 4', serif; font-size: 1.35rem; font-weight: 300; color: white; max-width: 800px; margin: 0 auto; line-height: 1.5; }
+  .finding-banner p { font-family: 'Source Serif 4', serif; font-size: 1.45rem; font-weight: 300; color: white; max-width: 800px; margin: 0 auto; line-height: 1.5; }
   .finding-banner strong { color: var(--gold-light); font-weight: 600; }
 
   .nav { background: white; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 0 2rem; }
   .nav-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 0; overflow-x: auto; }
-  .nav a { display: block; padding: 1rem 1.2rem; text-decoration: none; color: var(--text-light); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.2s; }
+  .nav a { display: block; padding: 1rem 1.2rem; text-decoration: none; color: var(--text-light); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.2s; }
   .nav a:hover { color: var(--blue); border-bottom-color: var(--blue); }
 
   .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
   section { padding: 3rem 0; border-bottom: 1px solid var(--border); }
-  .section-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
-  h2 { font-family: 'Source Serif 4', serif; font-size: 1.5rem; font-weight: 600; color: var(--navy); margin-bottom: 1.5rem; }
+  .section-label { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+  h2 { font-family: 'Source Serif 4', serif; font-size: 1.65rem; font-weight: 600; color: var(--navy); margin-bottom: 1.5rem; }
 
-  .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-  .bullet-list li { padding-left: 1.2rem; position: relative; color: var(--text-light); font-size: 0.95rem; }
+  .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+  .bullet-list li { padding-left: 1.4rem; position: relative; color: var(--text-light); font-size: 1rem; }
   .bullet-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-weight: 600; }
 
-  .methods-grid { display: grid; grid-template-columns: 120px 1fr; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem; }
-  .methods-grid .label { background: var(--navy); color: rgba(255,255,255,0.7); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.9rem 1rem; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .methods-grid .value { background: white; padding: 0.9rem 1.2rem; font-size: 0.9rem; color: var(--text); border-bottom: 1px solid var(--border); display: flex; align-items: center; }
+  .methods-grid { display: grid; grid-template-columns: 130px 1fr; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem; }
+  .methods-grid .label { background: var(--navy); color: rgba(255,255,255,0.7); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 1rem 1rem; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .methods-grid .value { background: white; padding: 1rem 1.2rem; font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); display: flex; align-items: center; }
   .methods-grid .label:last-of-type, .methods-grid .value:last-of-type { border-bottom: none; }
 
-  .formula-box { background: var(--navy); color: white; border-radius: 8px; padding: 1.2rem 1.5rem; font-family: 'Source Serif 4', serif; font-size: 1rem; margin: 1.5rem 0; text-align: center; letter-spacing: 0.02em; }
-  .formula-box .formula { font-size: 1.1rem; margin-top: 0.4rem; color: var(--gold-light); }
-  .formula-box .sub { font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-top: 0.4rem; }
+  .formula-box { background: var(--navy); color: white; border-radius: 8px; padding: 1.4rem 1.5rem; font-family: 'Source Serif 4', serif; font-size: 1.05rem; margin: 1.5rem 0; text-align: center; letter-spacing: 0.02em; }
+  .formula-box .formula { font-size: 1.2rem; margin-top: 0.4rem; color: var(--gold-light); }
+  .formula-box .sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.4rem; }
 
   .pop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
   .pop-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; text-align: center; }
-  .pop-card .num { font-family: 'Source Serif 4', serif; font-size: 2rem; font-weight: 600; color: var(--navy); line-height: 1; }
-  .pop-card .unit { font-size: 0.75rem; color: var(--text-light); margin-top: 0.2rem; }
-  .pop-card .label2 { font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem; font-weight: 500; }
+  .pop-card .num { font-family: 'Source Serif 4', serif; font-size: 2.1rem; font-weight: 600; color: var(--navy); line-height: 1; }
+  .pop-card .unit { font-size: 0.82rem; color: var(--text-light); margin-top: 0.2rem; }
+  .pop-card .label2 { font-size: 0.88rem; color: var(--text-light); margin-top: 0.5rem; font-weight: 500; }
 
   .fig-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 1.5rem 0; }
   .fig-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 1.5rem 0; }
   .fig-box { background: white; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
   .fig-box img { width: 100%; display: block; }
-  .fig-caption { padding: 0.7rem 1rem; font-size: 0.78rem; color: var(--text-light); border-top: 1px solid var(--border); font-style: italic; line-height: 1.4; }
+  .fig-caption { padding: 0.8rem 1rem; font-size: 0.85rem; color: var(--text-light); border-top: 1px solid var(--border); font-style: italic; line-height: 1.5; }
 
-  .results-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; background: white; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
-  .results-table thead th { background: var(--navy); color: rgba(255,255,255,0.85); padding: 0.75rem 1rem; text-align: left; font-weight: 500; font-size: 0.8rem; letter-spacing: 0.03em; }
+  .results-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; background: white; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+  .results-table thead th { background: var(--navy); color: rgba(255,255,255,0.85); padding: 0.85rem 1rem; text-align: left; font-weight: 500; font-size: 0.85rem; letter-spacing: 0.03em; }
   .results-table tbody tr:nth-child(even) { background: var(--section-bg); }
-  .results-table tbody td { padding: 0.65rem 1rem; color: var(--text); border-bottom: 1px solid var(--border); }
-  .results-table .section-row td { background: rgba(37,99,168,0.07); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--blue); padding: 0.5rem 1rem; }
+  .results-table tbody td { padding: 0.75rem 1rem; color: var(--text); border-bottom: 1px solid var(--border); }
+  .results-table .section-row td { background: rgba(37,99,168,0.07); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--blue); padding: 0.6rem 1rem; }
   .sig { font-weight: 700; color: var(--navy); }
   .ns { color: var(--text-light); }
 
   .result-block { margin: 2rem 0; }
-  .result-block-title { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.8rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+  .result-block-title { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 0.8rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
 
   .imp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1rem; }
-  .imp-card { background: white; border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1.1rem 1.2rem; font-size: 0.9rem; color: var(--text-light); line-height: 1.5; }
+  .imp-card { background: white; border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1.2rem 1.3rem; font-size: 0.95rem; color: var(--text-light); line-height: 1.6; }
   .imp-card.warning { border-left-color: #e07b39; }
 
   .flowchart-wrap { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; text-align: center; }
   .flowchart-wrap img { max-width: 100%; height: auto; }
 
-  footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.8rem; margin-top: 2rem; }
+  footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.88rem; margin-top: 2rem; }
   footer strong { color: rgba(255,255,255,0.8); }
 
   @media (max-width: 700px) {
+    html { font-size: 17px; }
     .fig-grid-3 { grid-template-columns: 1fr; }
     .fig-grid-2 { grid-template-columns: 1fr; }
     .pop-grid { grid-template-columns: repeat(2, 1fr); }
     .imp-grid { grid-template-columns: 1fr; }
-    .header h1 { font-size: 1.5rem; }
-    .finding-banner p { font-size: 1.1rem; }
+    .header h1 { font-size: 1.6rem; }
+    .finding-banner p { font-size: 1.2rem; }
+    .methods-grid { grid-template-columns: 100px 1fr; }
   }
 </style>
 </head>
@@ -137,7 +140,7 @@
       <li>Prior canine studies confirm trazodone increases heart rate and reduces heart rate variability</li>
       <li>Whether trazodone directly affects AV conduction in conscious dogs at clinical doses remained unknown</li>
     </ul>
-    <p class="section-label" style="margin-top:1.5rem;">Objectives</p>
+    <p class="section-label" style="margin-top:1.8rem;">Objectives</p>
     <ul class="bullet-list">
       <li>Does oral trazodone (8 mg/kg) alter PR interval in conscious healthy dogs?</li>
       <li>Is any PR change driven by heart rate, or does an HR-independent AV conduction effect exist?</li>
@@ -231,11 +234,11 @@
         <tr><td>PRa (ms)</td><td>93.5 [83.4–101.9]</td><td>91.5 [81.9–94.2]</td><td>6.17 [−3.55–8.00]</td><td class="sig">0.0087</td></tr>
       </tbody>
     </table>
-    <p style="font-size:0.78rem;color:var(--text-light);margin-bottom:2rem;">Mean ± SD (normally distributed) or Median [Q1–Q3] (non-normally distributed), based on Shapiro-Wilk test. Bold p values indicate statistical significance (p &lt; 0.05).</p>
+    <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:2rem;">Mean ± SD (normally distributed) or Median [Q1–Q3] (non-normally distributed), based on Shapiro-Wilk test. Bold p values indicate statistical significance (p &lt; 0.05).</p>
 
     <div class="result-block">
       <div class="result-block-title">ECG-derived HR · PR interval · VVTI</div>
-      <ul class="bullet-list" style="margin-bottom:1rem;">
+      <ul class="bullet-list" style="margin-bottom:1.2rem;">
         <li>Auscultated HR, RR, and FAS score did not differ significantly between treatments (all p &gt; 0.05)</li>
         <li>ECGHR was significantly higher under trazodone (median difference −12 bpm, p = 0.0007)</li>
         <li>PR interval was significantly shorter under trazodone (mean difference 9.2 ms, p &lt; 0.0001); all values remained within the reference range (60–130 ms) except one dog at ECGHR 200 bpm</li>
@@ -259,7 +262,7 @@
 
     <div class="result-block">
       <div class="result-block-title">Correlation: PR vs. ECG-derived HR</div>
-      <ul class="bullet-list" style="margin-bottom:1rem;">
+      <ul class="bullet-list" style="margin-bottom:1.2rem;">
         <li>PR interval was inversely correlated with ECGHR under both conditions: Placebo r<sub>s</sub> = −0.649 (p = 0.004); Trazodone r<sub>s</sub> = −0.652 (p = 0.003)</li>
         <li>Within-subject ΔPR was also correlated with ΔECGHR (r<sub>s</sub> = −0.702, p = 0.001), indicating that heart rate change substantially drives PR shortening</li>
       </ul>
@@ -277,7 +280,7 @@
 
     <div class="result-block">
       <div class="result-block-title">HR-adjusted PR Interval</div>
-      <ul class="bullet-list" style="margin-bottom:1rem;">
+      <ul class="bullet-list" style="margin-bottom:1.2rem;">
         <li>Linear mixed-effects model identified a significant negative association between ECGHR and PR interval (β₁ = −0.2751 ms/bpm, p = 0.0020)</li>
         <li>After correction, PRa remained significantly shorter under trazodone (median difference 6.17 ms, p = 0.0087)</li>
         <li>13 of 18 dogs had PRa<sub>Placebo</sub> &gt; PRa<sub>Trazodone</sub>, indicating a consistent residual HR-independent shortening effect</li>
