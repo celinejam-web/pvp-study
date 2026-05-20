@@ -9,10 +9,8 @@
   :root {
     --navy: #1a2744;
     --blue: #2563a8;
-    --blue-light: #4a90d9;
     --gold: #c9a84c;
     --gold-light: #f0d080;
-    --white: #ffffff;
     --off-white: #f8f7f4;
     --text: #1a1a2e;
     --text-light: #4a5568;
@@ -26,7 +24,7 @@
   .header { background: var(--navy); color: white; padding: 3rem 2rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
   .header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #1a2744 0%, #2a3d6b 60%, #1e3a5f 100%); }
   .header-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
-  .header h1 { font-family: 'Source Serif 4', serif; font-size: 2.1rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; margin-bottom: 1rem; color: white; }
+  .header h1 { font-family: 'Source Serif 4', serif; font-size: 2.1rem; font-weight: 600; line-height: 1.25; margin-bottom: 1rem; color: white; }
   .header h1 span { color: var(--gold-light); }
   .authors { font-size: 1rem; color: rgba(255,255,255,0.8); margin-bottom: 0.4rem; }
   .institution { font-size: 0.9rem; color: rgba(255,255,255,0.55); font-style: italic; }
@@ -37,7 +35,7 @@
   .finding-banner strong { color: var(--gold-light); font-weight: 600; }
 
   .nav { background: white; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; padding: 0 2rem; }
-  .nav-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 0; overflow-x: auto; }
+  .nav-inner { max-width: 1000px; margin: 0 auto; display: flex; overflow-x: auto; }
   .nav a { display: block; padding: 1rem 1.2rem; text-decoration: none; color: var(--text-light); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.2s; }
   .nav a:hover { color: var(--blue); border-bottom-color: var(--blue); }
 
@@ -50,14 +48,15 @@
   .bullet-list li { padding-left: 1.4rem; position: relative; color: var(--text-light); font-size: 1rem; }
   .bullet-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-weight: 600; }
 
-  .methods-grid { display: grid; grid-template-columns: 130px 1fr; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem; }
-  .methods-grid .label { background: var(--navy); color: rgba(255,255,255,0.7); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 1rem 1rem; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .methods-grid { display: grid; grid-template-columns: 130px 1fr; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem; }
+  .methods-grid .label { background: var(--navy); color: rgba(255,255,255,0.7); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 1rem; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .methods-grid .value { background: white; padding: 1rem 1.2rem; font-size: 0.95rem; color: var(--text); border-bottom: 1px solid var(--border); display: flex; align-items: center; }
   .methods-grid .label:last-of-type, .methods-grid .value:last-of-type { border-bottom: none; }
 
-  .formula-box { background: var(--navy); color: white; border-radius: 8px; padding: 1.4rem 1.5rem; font-family: 'Source Serif 4', serif; font-size: 1.05rem; margin: 1.5rem 0; text-align: center; letter-spacing: 0.02em; }
-  .formula-box .formula { font-size: 1.2rem; margin-top: 0.4rem; color: var(--gold-light); }
-  .formula-box .sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.4rem; }
+  .formula-box { background: var(--navy); border-radius: 8px; padding: 1.4rem 1.8rem; margin: 1.5rem 0; }
+  .formula-main { text-align: center; font-family: 'Source Serif 4', serif; font-size: 1.35rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.02em; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .formula-meta { color: rgba(255,255,255,0.75); font-size: 0.82rem; line-height: 1.9; }
+  .formula-meta .bold { font-weight: 700; color: white; }
 
   .pop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
   .pop-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; text-align: center; }
@@ -71,11 +70,11 @@
   .fig-box img { width: 100%; display: block; }
   .fig-caption { padding: 0.8rem 1rem; font-size: 0.85rem; color: var(--text-light); border-top: 1px solid var(--border); font-style: italic; line-height: 1.5; }
 
-  .results-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; background: white; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
-  .results-table thead th { background: var(--navy); color: rgba(255,255,255,0.85); padding: 0.85rem 1rem; text-align: left; font-weight: 500; font-size: 0.85rem; letter-spacing: 0.03em; }
+  .results-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; background: white; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+  .results-table thead th { background: var(--navy); color: rgba(255,255,255,0.85); padding: 0.75rem 1rem; text-align: left; font-weight: 500; font-size: 0.8rem; letter-spacing: 0.03em; }
   .results-table tbody tr:nth-child(even) { background: var(--section-bg); }
-  .results-table tbody td { padding: 0.75rem 1rem; color: var(--text); border-bottom: 1px solid var(--border); }
-  .results-table .section-row td { background: rgba(37,99,168,0.07); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--blue); padding: 0.6rem 1rem; }
+  .results-table tbody td { padding: 0.65rem 1rem; color: var(--text); border-bottom: 1px solid var(--border); }
+  .results-table .section-row td { background: rgba(37,99,168,0.07); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--blue); padding: 0.5rem 1rem; }
   .sig { font-weight: 700; color: var(--navy); }
   .ns { color: var(--text-light); }
 
@@ -84,7 +83,6 @@
 
   .imp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1rem; }
   .imp-card { background: white; border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 1.2rem 1.3rem; font-size: 0.95rem; color: var(--text-light); line-height: 1.6; }
-  .imp-card.warning { border-left-color: #e07b39; }
 
   .flowchart-wrap { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; text-align: center; }
   .flowchart-wrap img { max-width: 100%; height: auto; }
@@ -94,8 +92,7 @@
 
   @media (max-width: 700px) {
     html { font-size: 17px; }
-    .fig-grid-3 { grid-template-columns: 1fr; }
-    .fig-grid-2 { grid-template-columns: 1fr; }
+    .fig-grid-3, .fig-grid-2 { grid-template-columns: 1fr; }
     .pop-grid { grid-template-columns: repeat(2, 1fr); }
     .imp-grid { grid-template-columns: 1fr; }
     .header h1 { font-size: 1.6rem; }
@@ -166,9 +163,11 @@
     </div>
     <p class="section-label" style="margin-top:1.5rem;">HR Adjustment Formula</p>
     <div class="formula-box">
-      <div>Linear mixed-effects model (placebo + screening data): β₁ = −0.2751 ms/bpm (p = 0.0020)</div>
-      <div class="formula">PRa = PR + 0.2751 × (ECGHR − 111)</div>
-      <div class="sub">Reference ECGHR = 111 bpm (median of placebo group)</div>
+      <div class="formula-main">PRa = PR + 0.2751 × (ECGHR − 111)</div>
+      <div class="formula-meta">
+        <div><span class="bold">β₁ = −0.2751 ms/bpm</span> derived from linear mixed-effects model (p = 0.0020)</div>
+        <div>Reference ECGHR = 111 bpm (median of drug-free periods)</div>
+      </div>
     </div>
   </div>
 </section>
@@ -234,7 +233,7 @@
         <tr><td>PRa (ms)</td><td>93.5 [83.4–101.9]</td><td>91.5 [81.9–94.2]</td><td>6.17 [−3.55–8.00]</td><td class="sig">0.0087</td></tr>
       </tbody>
     </table>
-    <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:2rem;">Mean ± SD (normally distributed) or Median [Q1–Q3] (non-normally distributed), based on Shapiro-Wilk test. Bold p values indicate statistical significance (p &lt; 0.05).</p>
+    <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:2rem;">Mean ± SD (normally distributed) or Median [Q1–Q3] (non-normally distributed), based on Shapiro-Wilk test. Bold p values indicate statistical significance (p &lt; 0.05).</p>
 
     <div class="result-block">
       <div class="result-block-title">ECG-derived HR · PR interval · VVTI</div>
@@ -306,9 +305,8 @@
     <h2>What does this mean?</h2>
     <div class="imp-grid">
       <div class="imp-card">No clinically significant arrhythmia was observed with oral trazodone at 8 mg/kg in healthy dogs.</div>
-      <div class="imp-card">PR shortening is substantially HR-driven, but a residual HR-independent dromotropic effect persists after rate adjustment.</div>
-      <div class="imp-card warning">Behavioral sedation (FAS) and cardiac autonomic effects dissociate — behavioral calm does not indicate cardiac safety.</div>
-      <div class="imp-card warning">Effects in dogs with pre-existing cardiac disease and at higher doses remain unknown; dedicated investigation is warranted.</div>
+      <div class="imp-card">PR shortening was substantially driven by the concurrent increase in heart rate, but a residual rate-independent component was also identified.</div>
+      <div class="imp-card" style="grid-column: 1 / -1;">PR shortening did not exceed the reference range in most dogs and was not associated with adverse cardiac events; whether these findings extend to dogs with pre-existing cardiac disease remains to be determined.</div>
     </div>
   </div>
 </section>
